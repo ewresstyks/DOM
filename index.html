@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainRectangle">
+        <div class="firstR"></div>
+        <div class="secondR"></div>
+    </div>
+
+    <style>
+        #mainRectangle{
+            height: 100px;
+            width: 180px;
+            border: dotted blue;
+            margin: 0 auto;
+        }
+        .firstR, .secondR{
+            height: 30px;
+            width: 140px;
+            border: dotted palevioletred;
+            margin: 0 auto;
+        }
+        .firstR{
+            margin-top: 15px;
+        }
+    </style>
+
+    <script> 
+        let mainDiv = document.querySelector("div#mainRectangle"); 
+        mainDiv.style.border = "solid red";
+        let firstDiv = document.querySelector("div.firstR");
+        firstDiv.style.border = "solid blue"; 
+        let secondDiv = document.querySelector("div.secondR");
+        secondDiv.style.border = "solid red"; 
+    </script> 
+</body>
+</html>
